@@ -2,15 +2,16 @@ class Spaceship extends Floater
 {   
   public void turnLeft(int nDegreesOfRotation)
   {
-  myPointDirection-=nDegreesOfRotation;  
+  myPointDirection -= nDegreesOfRotation;  
   }
   
-  public Spaceship(){
+  public Spaceship()
+  {
     corners = 4;
     xCorners = new int[]{-8,16,-8,-2};
     yCorners = new int[]{-8,0,8,0};
-    myCenterX = 400;
-    myCenterY = 400;
+    myCenterX = 500;
+    myCenterY = 350;
     myDirectionX = 0;
     myDirectionY = 0;
     myPointDirection = 0;
@@ -19,11 +20,11 @@ class Spaceship extends Floater
   
   public void hyperspace()
   {
-  myCenterX = (int)(Math.random()*500);
-  myCenterY = (int)(Math.random()*500);
+  myCenterX = (int)(Math.random()*900);
+  myCenterY = (int)(Math.random()*600);
   myDirectionX = 0;
   myDirectionY = 0;
-  myPointDirection = (int)(Math.random()*500);
+  myPointDirection = (int)(Math.random()*360);
   }
   public void showVariables()
   {
