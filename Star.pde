@@ -16,6 +16,6 @@ class Star //note that this class does NOT extend Floater
 
     noStroke();
     fill(myColor);
-    ellipse(myX,myY,starX,starY);
+    ellipse(myX, myY, starX, starY);
   }
 }
